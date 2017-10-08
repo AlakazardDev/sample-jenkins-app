@@ -1,0 +1,40 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "before": true,
+    "after": true,
+    "document": true,
+    "foo": true
+  },
+  "rules": {
+    "no-bitwise": "off",
+    "arrow-body-style": "off",
+    "consistent-return": "off",
+    "linebreak-style": "off",
+    "global-require": "off",
+    "lines-around-directive": ["error", "never"],
+    "no-unused-vars": 0,
+    "no-multi-assign": 0,
+    "no-unneeded-ternary": "off",
+    "no-nested-ternary": 0,
+    "max-len": [1, 120, 2, { "ignoreComments": true, "ignoreStrings": true }],
+    "comma-dangle": ["error", "never"],
+    "comma-style": ["error", "last", { "exceptions": { "VariableDeclaration": true }}],
+    "indent": [2, "tab", { "SwitchCase": 1 }],
+    "no-tabs": 0,
+    "no-underscore-dangle": "off",
+    "one-var": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js", "**/*.spec.js"]}],
+    "spaced-comment": "off",
+    "strict": "off",
+    "prefer-spread": "off",
+    "prefer-rest-params": "off"
+  }
+}
